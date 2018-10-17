@@ -22,5 +22,7 @@ router.post('/', function(req, res, next) {
   
   res.send(data);
 });
-
+router.get('/', function(req, res, next) {
+  res.render("index");
+});
 module.exports = router;
